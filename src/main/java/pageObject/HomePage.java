@@ -31,7 +31,7 @@ public class HomePage extends Base{
 	}
 	
 	public String getCurrURL() throws Throwable {
-		String homePageURL=Action.getCurrentURL(driver);
+		String homePageURL=driver.getCurrentUrl();
 		return homePageURL;
 	}
 }
