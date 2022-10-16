@@ -30,6 +30,17 @@ public class LoginPage extends Base {
 		PageFactory.initElements(driver, this);
 	}
 	
+	public AddPage login(String uname, String pswd,AddPage addressPage) throws Throwable {
+		Action.scrollByVisibilityOfElement(driver, userName);
+		Action.type(userName, uname);
+		Action.type(password, pswd);
+		Action.click(driver, signBtn);
+		Thread.sleep(2000);
+		addressPage=new AddPage();
+		return addressPage;
+	}
+	
+	
 	public HomePage login(String uname, String pswd,HomePage homePage) throws Throwable {
 		//Action.scrollByVisibilityOfElement(driver, userName);
 		Action.type(userName, uname);
