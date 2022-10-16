@@ -41,7 +41,7 @@ public class LoginPage extends Base {
 	}
 	
 	
-	public HomePage login(String uname, String pswd,HomePage homePage) throws Throwable {
+	public HomePage login(String uname, String pswd) throws Throwable {
 		//Action.scrollByVisibilityOfElement(driver, userName);
 		Action.type(userName, uname);
 		Action.type(password, pswd);
