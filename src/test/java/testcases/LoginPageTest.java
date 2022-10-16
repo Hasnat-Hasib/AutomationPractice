@@ -12,9 +12,9 @@ import pageObject.LoginPage;
 
 public class LoginPageTest extends Base {
 	
-	private IndexPage indexPage;
-	private LoginPage loginPage;
-	private HomePage homePage;
+	 IndexPage indexPage;
+	 LoginPage loginPage;
+	 HomePage homePage;
 	
 	@BeforeMethod
 	public void setup() {

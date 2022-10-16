@@ -10,10 +10,11 @@ import pageObject.HomePage;
 import pageObject.IndexPage;
 import pageObject.LoginPage;
 
-public class HomepPageTest extends Base {
-	private IndexPage indexPage;
-	private LoginPage loginPage;
-	private HomePage homePage;
+public class HomePageTest extends Base {
+		IndexPage indexPage;
+		LoginPage loginPage;
+		HomePage homePage;
+	
 	@BeforeMethod
 	public void setup() {
 	launchApp();
@@ -22,25 +23,23 @@ public class HomepPageTest extends Base {
 	public void tearDown() {
 		driver.quit();
 	}
-	@Test 
+	
+	@Test
 	public void wishListTest() throws Throwable {
 		indexPage = new IndexPage();
-		loginPage = new LoginPage();
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		boolean result = homePage.validateMyWishList();
-		Assert.assertTrue(result);
+		loginPage= indexPage.clickOnSignIn();
+	    homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+	    boolean result = homePage.validateMyWishList();
+	    Assert.assertTrue(result);	   
 	}
 	
 	@Test
-	public void orderHistoryandDetailsTest() throws Throwable {
-		
-		indexPage= new IndexPage();
-		loginPage=indexPage.clickOnSignIn();
+	public void orderHistoryTest() throws Throwable {
+		indexPage = new IndexPage();
+		loginPage= indexPage.clickOnSignIn();
 	    homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		boolean result=homePage.validateOrderHistory();
-		Assert.assertTrue(result);
-		
+	    boolean result = homePage.validateOrderHistory();
+	    Assert.assertTrue(result);		
 	}
-	
 
 }
