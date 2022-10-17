@@ -13,11 +13,11 @@ public class OrderSummary extends Base {
 	private WebElement confirmOrderBtn;
 	
 	public OrderSummary() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public OrderConfPage clickOnconfirmOrderBtn() throws Throwable {
-		Action.click(driver, confirmOrderBtn);
+		Action.click(getDriver(), confirmOrderBtn);
 		return new OrderConfPage();
 	}
 	

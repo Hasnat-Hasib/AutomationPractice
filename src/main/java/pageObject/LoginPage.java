@@ -27,14 +27,14 @@ public class LoginPage extends Base {
 	private WebElement createNewAccountBtn;
 	
 	public LoginPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	public AddPage login1(String uname, String pswd) throws Throwable {
 		//Action.scrollByVisibilityOfElement(driver, userName);
 		Action.type(userName, uname);
 		Action.type(password, pswd);
-		Action.click(driver, signBtn);
+		Action.click(getDriver(), signBtn);
 		//Thread.sleep(2000);
 		return  new AddPage();
 		
@@ -45,7 +45,7 @@ public class LoginPage extends Base {
 		//Action.scrollByVisibilityOfElement(driver, userName);
 		Action.type(userName, uname);
 		Action.type(password, pswd);
-		Action.click(driver, signBtn);
+		Action.click(getDriver(), signBtn);
 		//Thread.sleep(2000);
 		return new HomePage();
 		
@@ -53,7 +53,7 @@ public class LoginPage extends Base {
 	
 	public AccCreatePage createNewAccount(String newEmail) throws Throwable {
 		Action.type(emailNewAccount, newEmail);
-		Action.click(driver, createNewAccountBtn);
+		Action.click(getDriver(), createNewAccountBtn);
 		return new AccCreatePage();
 	}
 	

@@ -21,7 +21,7 @@ public class IndexPage extends Base {
 	private WebElement searchBtn;
 	
 	public IndexPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	public LoginPage clickOnSignIn() throws Throwable {
@@ -29,23 +29,23 @@ public class IndexPage extends Base {
 //		action.click(getDriver(), signBtn);
 //		return new LoginPage();
 		
-		Action.click(driver, signBtn);
+		Action.click(getDriver(), signBtn);
 		return new LoginPage();
 	}
 	
 	public boolean validateLogo() throws Throwable {
-		return Action.isDisplayed(driver, logo);
+		return Action.isDisplayed(getDriver(), logo);
 	}
 	
 	public String getMyStoreTitle() {
-		String storeTitel=driver.getTitle();
+		String storeTitel=getDriver().getTitle();
 		return storeTitel;
 	}
 	
 	public SearchResult searchProduct(String productName) throws Throwable {
 		Action.type(searchBox, productName);
 		//action.scrollByVisibilityOfElement(getDriver(), searchBtn);
-		Action.click(driver, searchBtn);
+		Action.click(getDriver(), searchBtn);
 		//Thread.sleep(3000);
 		return new SearchResult();
 	}

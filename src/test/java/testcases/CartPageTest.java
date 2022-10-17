@@ -21,7 +21,7 @@ public class CartPageTest extends Base {
 	}
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		getDriver().quit();
 	}
 	@Test
 	public void addToCartTest() throws Throwable {

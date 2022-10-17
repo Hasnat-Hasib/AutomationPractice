@@ -13,15 +13,15 @@ public class SearchResult extends Base {
 	private WebElement productResult;
 	
 	public SearchResult() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	public boolean isProductAvailable() throws Throwable {
-		return Action.isDisplayed(driver, productResult);
+		return Action.isDisplayed(getDriver(), productResult);
 	}
 	
 	public CartPage clickOnProduct() throws Throwable {
-		Action.click(driver, productResult);
+		Action.click(getDriver(), productResult);
 		return new CartPage();
 	}
 	

@@ -15,11 +15,11 @@ public class AddPage extends Base {
 	private WebElement proceedToCheckOut;
 	
 	public AddPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public Shipping clickOnCheckOut() throws Throwable {
-		Action.click(driver, proceedToCheckOut);
+		Action.click(getDriver(), proceedToCheckOut);
 		return new Shipping();
 	}
 	

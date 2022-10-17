@@ -14,7 +14,7 @@ public class OrderConfPage extends Base {
 	private WebElement confirmMessag;
 	
 	public OrderConfPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	public String validateConfirmMessage() {
