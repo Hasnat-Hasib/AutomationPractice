@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.AccCreatePageTest">
+      <class name="testcases.EndToEndTest">
         <methods>
-          <include name="verifyCreateAccPageTest"/>
-          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="endToEndTest"/>
+          <include name="tearDown"/>
           <include name="loadConfig"/>
         </methods>
-      </class> <!-- testcases.AccCreatePageTest -->
+      </class> <!-- testcases.EndToEndTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

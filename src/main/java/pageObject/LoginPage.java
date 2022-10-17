@@ -30,14 +30,14 @@ public class LoginPage extends Base {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public AddPage login(String uname, String pswd,AddPage addressPage) throws Throwable {
-		Action.scrollByVisibilityOfElement(driver, userName);
+	public AddPage login1(String uname, String pswd) throws Throwable {
+		//Action.scrollByVisibilityOfElement(driver, userName);
 		Action.type(userName, uname);
 		Action.type(password, pswd);
 		Action.click(driver, signBtn);
-		Thread.sleep(2000);
-		addressPage=new AddPage();
-		return addressPage;
+		//Thread.sleep(2000);
+		return  new AddPage();
+		
 	}
 	
 	
@@ -45,7 +45,7 @@ public class LoginPage extends Base {
 		//Action.scrollByVisibilityOfElement(driver, userName);
 		Action.type(userName, uname);
 		Action.type(password, pswd);
-		Action.JSClick(driver, signBtn);
+		Action.click(driver, signBtn);
 		//Thread.sleep(2000);
 		return new HomePage();
 		
