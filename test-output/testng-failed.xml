@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.HomepPageTest">
+      <class name="testcases.AccCreatePageTest">
         <methods>
-          <include name="loadConfig"/>
-          <include name="setup"/>
-          <include name="wishListTest"/>
+          <include name="verifyCreateAccPageTest"/>
           <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="loadConfig"/>
         </methods>
-      </class> <!-- testcases.HomepPageTest -->
+      </class> <!-- testcases.AccCreatePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
