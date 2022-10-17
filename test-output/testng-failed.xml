@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.EndToEndTest">
+      <class name="testcases.LoginPageTest">
         <methods>
           <include name="setup"/>
-          <include name="endToEndTest"/>
           <include name="tearDown"/>
+          <include name="loginTest"/>
           <include name="loadConfig"/>
         </methods>
-      </class> <!-- testcases.EndToEndTest -->
+      </class> <!-- testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

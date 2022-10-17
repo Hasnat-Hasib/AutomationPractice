@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,6 +22,10 @@ public class Base {
 	public static Properties prop;
 	//public static WebDriver driver;
 	public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
+	
+	public void beforeSuite() {
+		DOMConfigurator.configure("log4j.xml");
+	}
 	
 	public static WebDriver getDriver() {
 		// Get Driver from threadLocalmap
