@@ -2,24 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-17T16:40:43 BDT" name="Default suite" finished-at="2022-10-17T16:41:10 BDT" duration-ms="26294">
+  <suite started-at="2022-10-18T14:48:52 BDT" name="Default suite" finished-at="2022-10-18T14:49:21 BDT" duration-ms="29145">
     <groups>
     </groups>
-    <test started-at="2022-10-17T16:40:43 BDT" name="Default test" finished-at="2022-10-17T16:41:10 BDT" duration-ms="26294">
+    <test started-at="2022-10-18T14:48:52 BDT" name="Default test" finished-at="2022-10-18T14:49:21 BDT" duration-ms="29145">
       <class name="testcases.LoginPageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:testcases.LoginPageTest@e1de817]" started-at="2022-10-17T16:40:43 BDT" name="loadConfig" finished-at="2022-10-17T16:40:43 BDT" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:testcases.LoginPageTest@52102734]" started-at="2022-10-18T14:48:52 BDT" name="loadConfig" finished-at="2022-10-18T14:48:52 BDT" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginPageTest@e1de817]" started-at="2022-10-17T16:40:43 BDT" name="setup" finished-at="2022-10-17T16:41:03 BDT" duration-ms="19271" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginPageTest@52102734]" started-at="2022-10-18T14:48:54 BDT" name="setup" finished-at="2022-10-18T14:49:13 BDT" duration-ms="18958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:testcases.LoginPageTest@e1de817]" started-at="2022-10-17T16:41:03 BDT" name="loginTest" finished-at="2022-10-17T16:41:09 BDT" duration-ms="6356" status="PASS">
+        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:testcases.LoginPageTest@52102734]" started-at="2022-10-18T14:49:13 BDT" name="loginTest" data-provider="credentials" finished-at="2022-10-18T14:49:20 BDT" duration-ms="7376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@xyz.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@e1de817]" started-at="2022-10-17T16:41:09 BDT" name="tearDown" finished-at="2022-10-17T16:41:10 BDT" duration-ms="606" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@52102734]" started-at="2022-10-18T14:49:20 BDT" name="tearDown" finished-at="2022-10-18T14:49:21 BDT" duration-ms="794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
